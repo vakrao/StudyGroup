@@ -97,7 +97,7 @@ public class MakeGroup extends ActionBarActivity {
 
                 try {
                     Networking n = new Networking();
-                    n.execute("http://192.168.56.1:5000/new_login",Networking.NETWORK_STATE_REGISTER);
+                    n.execute("http://127.0.0.1:5000/new_login",Networking.NETWORK_STATE_REGISTER);
 
 
                     //InputStream in = new BufferedInputStream(urlConnection.getInputStream());
@@ -129,7 +129,7 @@ public class MakeGroup extends ActionBarActivity {
 
     private void getJson(String u,int state){
         HttpURLConnection urlConnection = null;
-        URL url =   new URL("https://192.168.65.1:5000/send-data");
+        URL url =   new URL("http://127.0.0.1:5000:/send-data");
         urlConnection = (HttpURLConnection) url.openConnection();
         urlConnection.setRequestMethod("POST");
         urlConnection.setDoOutput(true);
