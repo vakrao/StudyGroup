@@ -82,7 +82,7 @@ public class GiveInfo extends Activity {
                     }
                 //do networking!
                 Networking n = new Networking();
-                n.execute("http://192.168.56.1:5000/new_login",Networking.NETWORK_STATE_REGISTER);
+                n.execute("http://http://127.0.0.1:5000/new_login",Networking.NETWORK_STATE_REGISTER);
                 if (correct)
                 {
                     sendMessage();
